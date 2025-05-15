@@ -6,7 +6,7 @@
 <section class="habits-list">
     {% for habit in habits %}
         {% set completions = habit in completions %}
-        {% if complete %}
+        {% if completions %}
         <div class="habit completed">
                 <p class="habit__name">
                     {{ habit }}
