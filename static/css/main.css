@@ -117,3 +117,48 @@ padding: 1rem;
         display: block;
     }
 }
+.habit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 26px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ff8fab;
+    border: 3px solid black;
+    border-radius: 6px;
+}
+
+.habit:not(.completed) {
+    padding: 0;
+}
+
+.habit:not(.completed):hover {
+    background-color: #fb6f92;
+}
+
+.habit__icon {
+    width: 1em;
+    height: 1em;
+}
+
+.habit__name {
+    margin: 0;
+}
+
+.habit__form {
+    width: 100%;
+}
+
+.habit__button {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: left;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+}
